@@ -1,0 +1,183 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: RGB(28, 28, 28) ; 
+    grid-area: cab;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+
+}
+
+aside{
+    background-color: RGB(28, 28, 28) ; 
+    grid-area: aside;
+}
+
+header ul{
+    list-style: none;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    
+}
+
+h1{
+    justify-content: center;
+    text-align: center;
+    color: wheat;
+    background-color: RGB(28, 28, 28) ;
+}
+
+h3{
+    justify-content: center;
+    text-align: center;
+    
+}
+main{
+    /*background-color: lightseagreen;*/
+    grid-area: main;
+    
+}
+main table{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    
+}
+
+.body1 {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.05fr;
+    grid-template-areas: 
+    "aside cab cab"
+    "main main main"
+    "footer footer sec"}
+
+footer{
+    background-color: RGB(28, 28, 28) ; 
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+footer li{
+    list-style: none;
+    justify-content: space-evenly;
+    
+}
+section{
+    background-color: RGB(28, 28, 28);
+    grid-area: sec;
+    display: flex;
+    justify-content:center;    
+}
+a{
+    text-decoration: none;
+list-style: none;
+color: wheat;
+
+}
+
+.body {
+    background-image: url(../css/img/fondo3.png);
+    height: 600px;
+    background-attachment:fixed;
+    background-position: right;
+    background-repeat:no-repeat;
+    background: size 50px;
+    margin-bottom: 50px;
+ }
+
+ /*media*/
+
+.anima {
+    overflow: hidden;
+    background-color: RGB(28, 28, 28);
+}
+
+.anima ul li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color:wheat;
+}
+
+
+@media screen and (max-width: 768px){
+    .anima ul li {
+        float: none;
+        width: 100%;
+    }  
+}
+@media screen and (max-width: 568px){
+        .anima ul li {
+            float: none;
+            width: 100%;
+        }     
+    .oculto {
+    display: none;
+    }  
+}
+
+/*Boostrap*/
+.btn-propio {
+    color: black;
+    background-color: wheat;
+    border-radius:40% ;
+    border-color: black;
+}
+
+.btn-propio :hover{
+    background-color: aqua;
+}
+.nombre_eje{
+    background-color: black;
+    color: wheat;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+/*contenedores
+
+
+.mi-container div{
+    border: 1px black;
+}
+
+.mi-container div:nth-child(1){
+    background-color: aquamarine;
+}
+
+
+
+.mi-container div:nth-child(2){
+    background-color: blue;
+}
+.mi-container div:nth-child(3){
+    background-color: blueviolet;
+}
+
+.mi-container2 div:nth-child(1){
+    background-color: black;
+}
+.mi-container2 div:nth-child(2){
+    background-color: lightslategrey;
+}
+.mi-container2 div:nth-child(3){
+    background-color: lightpink;
+}*/
